@@ -11,7 +11,8 @@ class ClickMessageButtonSensor(BaseSensorOperator):
                  message_id_filepath: str,
                  method='GET',
                  request_params=None,
-                 *args, **kwargs):
+                 *args, **kwargs,
+    ):
         super(ClickMessageButtonSensor, self).__init__(*args, **kwargs)
         self.http_conn_id = http_conn_id
         self.request_params = request_params or {}

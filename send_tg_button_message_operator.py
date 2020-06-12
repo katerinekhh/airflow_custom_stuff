@@ -12,7 +12,8 @@ class SendTelegramButtonMessageOperator(BaseOperator):
             chat_id: str,
             message_text: str,
             message_id_filepath: str,
-            *args, **kwargs) -> None:
+            *args, **kwargs,
+    ):
         super().__init__(*args, **kwargs)
         self.tg_token = tg_token
         self.chat_id = chat_id
