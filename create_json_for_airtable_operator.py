@@ -1,13 +1,12 @@
 from datetime import datetime
 import json
-import csv
 
 from airflow.utils.decorators import apply_defaults
 from airflow.models.baseoperator import BaseOperator
 from airflow.hooks.http_hook import HttpHook
 
 
-class CreateCsvForAirtableOperator(BaseOperator):
+class CreateJsonForAirtableOperator(BaseOperator):
     @apply_defaults
     def __init__(
             self,
